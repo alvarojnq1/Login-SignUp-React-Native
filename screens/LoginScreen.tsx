@@ -48,7 +48,7 @@ export default function LoginScreen() {
         <Animated.View
           entering={FadeInDown.duration(1000).delay(400).springify()}
           style={styles.viewButton}>
-          <TouchableOpacity style={styles.loginBtn}>
+          <TouchableOpacity style={styles.loginBtn} onPress={() => alert('Bem vindo!')}>
             <Text style={styles.loginTxt}>Login</Text>
           </TouchableOpacity>
         </Animated.View>
